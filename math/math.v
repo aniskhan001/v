@@ -15,6 +15,22 @@ fn abs(a f64) f64 {
 	return a
 }
 
+fn acos(a f64) f64 {
+	return C.acos(a)
+}
+
+fn asin(a f64) f64 {
+	return C.asin(a)
+}
+
+fn atan(a f64) f64 {
+	return C.atan(a)
+}
+
+fn atan2(a, b f64) f64 {
+	return C.atan2(a, b)
+}
+
 fn ceil(a f64) f64 {
 	return C.ceil(a)
 }
@@ -33,6 +49,10 @@ fn exp(a f64) f64 {
 
 fn floor(a f64) f64 {
 	return C.floor(a)
+}
+
+fn fmod(a, b f64) f64 {
+	return C.fmod(a, b)
 }
 
 fn log(a f64) f64 {
